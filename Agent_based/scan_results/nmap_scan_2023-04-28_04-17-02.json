@@ -1,0 +1,518 @@
+{
+  "nmaprun": {
+    "@scanner": "nmap",
+    "@args": "nmap -oX - -sV -O -p- -sC -vv --script=vuln 127.0.0.1",
+    "@start": "1682635622",
+    "@startstr": "Fri Apr 28 04:17:02 2023",
+    "@version": "7.80",
+    "@xmloutputversion": "1.04",
+    "scaninfo": {
+      "@type": "syn",
+      "@protocol": "tcp",
+      "@numservices": "65535",
+      "@services": "1-65535"
+    },
+    "verbose": { "@level": "2" },
+    "debugging": { "@level": "0" },
+    "taskbegin": [
+      { "@task": "NSE", "@time": "1682635623" },
+      { "@task": "NSE", "@time": "1682635633" },
+      { "@task": "SYN Stealth Scan", "@time": "1682635633" },
+      { "@task": "Service scan", "@time": "1682635633" },
+      { "@task": "NSE", "@time": "1682635688" },
+      { "@task": "NSE", "@time": "1682636200" },
+      { "@task": "NSE", "@time": "1682636200" },
+      { "@task": "NSE", "@time": "1682636200" }
+    ],
+    "taskend": [
+      { "@task": "NSE", "@time": "1682635633" },
+      { "@task": "NSE", "@time": "1682635633" },
+      {
+        "@task": "SYN Stealth Scan",
+        "@time": "1682635633",
+        "@extrainfo": "65535 total ports"
+      },
+      {
+        "@task": "Service scan",
+        "@time": "1682635687",
+        "@extrainfo": "3 services on 1 host"
+      },
+      { "@task": "NSE", "@time": "1682636200" },
+      { "@task": "NSE", "@time": "1682636200" },
+      { "@task": "NSE", "@time": "1682636200" },
+      { "@task": "NSE", "@time": "1682636200" }
+    ],
+    "taskprogress": [
+      {
+        "@task": "NSE",
+        "@time": "1682635719",
+        "@percent": "98.50",
+        "@remaining": "1",
+        "@etc": "1682635719"
+      },
+      {
+        "@task": "NSE",
+        "@time": "1682635749",
+        "@percent": "99.00",
+        "@remaining": "1",
+        "@etc": "1682635750"
+      },
+      {
+        "@task": "NSE",
+        "@time": "1682635779",
+        "@percent": "99.00",
+        "@remaining": "1",
+        "@etc": "1682635780"
+      },
+      {
+        "@task": "NSE",
+        "@time": "1682635809",
+        "@percent": "99.00",
+        "@remaining": "2",
+        "@etc": "1682635810"
+      },
+      {
+        "@task": "NSE",
+        "@time": "1682635839",
+        "@percent": "99.00",
+        "@remaining": "2",
+        "@etc": "1682635841"
+      },
+      {
+        "@task": "NSE",
+        "@time": "1682635869",
+        "@percent": "99.00",
+        "@remaining": "2",
+        "@etc": "1682635871"
+      },
+      {
+        "@task": "NSE",
+        "@time": "1682635899",
+        "@percent": "99.00",
+        "@remaining": "3",
+        "@etc": "1682635901"
+      },
+      {
+        "@task": "NSE",
+        "@time": "1682635929",
+        "@percent": "99.00",
+        "@remaining": "3",
+        "@etc": "1682635931"
+      },
+      {
+        "@task": "NSE",
+        "@time": "1682635959",
+        "@percent": "99.00",
+        "@remaining": "3",
+        "@etc": "1682635962"
+      },
+      {
+        "@task": "NSE",
+        "@time": "1682635989",
+        "@percent": "99.00",
+        "@remaining": "4",
+        "@etc": "1682635992"
+      },
+      {
+        "@task": "NSE",
+        "@time": "1682636019",
+        "@percent": "99.00",
+        "@remaining": "4",
+        "@etc": "1682636022"
+      },
+      {
+        "@task": "NSE",
+        "@time": "1682636049",
+        "@percent": "99.00",
+        "@remaining": "4",
+        "@etc": "1682636053"
+      },
+      {
+        "@task": "NSE",
+        "@time": "1682636079",
+        "@percent": "99.00",
+        "@remaining": "4",
+        "@etc": "1682636083"
+      },
+      {
+        "@task": "NSE",
+        "@time": "1682636109",
+        "@percent": "99.25",
+        "@remaining": "4",
+        "@etc": "1682636112"
+      },
+      {
+        "@task": "NSE",
+        "@time": "1682636139",
+        "@percent": "99.25",
+        "@remaining": "4",
+        "@etc": "1682636142"
+      },
+      {
+        "@task": "NSE",
+        "@time": "1682636169",
+        "@percent": "99.25",
+        "@remaining": "4",
+        "@etc": "1682636173"
+      },
+      {
+        "@task": "NSE",
+        "@time": "1682636199",
+        "@percent": "99.50",
+        "@remaining": "3",
+        "@etc": "1682636202"
+      }
+    ],
+    "host": {
+      "@starttime": "1682635633",
+      "@endtime": "1682636200",
+      "status": {
+        "@state": "up",
+        "@reason": "localhost-response",
+        "@reason_ttl": "0"
+      },
+      "address": { "@addr": "127.0.0.1", "@addrtype": "ipv4" },
+      "hostnames": { "hostname": { "@name": "localhost", "@type": "PTR" } },
+      "ports": {
+        "extraports": {
+          "@state": "closed",
+          "@count": "65532",
+          "extrareasons": { "@reason": "resets", "@count": "65532" }
+        },
+        "port": [
+          {
+            "@protocol": "tcp",
+            "@portid": "631",
+            "state": {
+              "@state": "open",
+              "@reason": "syn-ack",
+              "@reason_ttl": "64"
+            },
+            "service": {
+              "@name": "ipp",
+              "@product": "CUPS",
+              "@version": "2.4",
+              "@method": "probed",
+              "@conf": "10",
+              "cpe": "cpe:/a:apple:cups:2.4"
+            },
+            "script": [
+              {
+                "@id": "clamav-exec",
+                "@output": "ERROR: Script execution failed (use -d to debug)"
+              },
+              {
+                "@id": "http-aspnet-debug",
+                "@output": "ERROR: Script execution failed (use -d to debug)"
+              },
+              {
+                "@id": "http-enum",
+                "@output": "\n  /admin.php: Possible admin folder\n  /admin/: Possible admin folder\n  /admin/admin/: Possible admin folder\n  /administrator/: Possible admin folder\n  /adminarea/: Possible admin folder\n  /adminLogin/: Possible admin folder\n  /admin_area/: Possible admin folder\n  /administratorlogin/: Possible admin folder\n  /admin/account.php: Possible admin folder\n  /admin/index.php: Possible admin folder\n  /admin/login.php: Possible admin folder (401 Unauthorized)\n  /admin/admin.php: Possible admin folder\n  /admin_area/admin.php: Possible admin folder\n  /admin_area/login.php: Possible admin folder\n  /admin/index.html: Possible admin folder\n  /admin/login.html: Possible admin folder (401 Unauthorized)\n  /admin/admin.html: Possible admin folder\n  /admin_area/index.php: Possible admin folder\n  /admin/home.php: Possible admin folder\n  /admin_area/login.html: Possible admin folder\n  /admin_area/index.html: Possible admin folder\n  /admin/controlpanel.php: Possible admin folder\n  /admincp/: Possible admin folder\n  /admincp/index.asp: Possible admin folder\n  /admincp/index.html: Possible admin folder\n  /admincp/login.php: Possible admin folder\n  /admin/account.html: Possible admin folder\n  /adminpanel.html: Possible admin folder\n  /admin/admin_login.html: Possible admin folder\n  /admin_login.html: Possible admin folder\n  /admin/cp.php: Possible admin folder\n  /administrator/index.php: Possible admin folder\n  /administrator/login.php: Possible admin folder\n  /admin/admin_login.php: Possible admin folder\n  /admin_login.php: Possible admin folder\n  /administrator/account.php: Possible admin folder\n  /administrator.php: Possible admin folder\n  /admin_area/admin.html: Possible admin folder\n  /admin/admin-login.php: Possible admin folder\n  /admin-login.php: Possible admin folder\n  /admin/home.html: Possible admin folder\n  /admin/admin-login.html: Possible admin folder\n  /admin-login.html: Possible admin folder\n  /admincontrol.php: Possible admin folder\n  /admin/adminLogin.html: Possible admin folder\n  /adminLogin.html: Possible admin folder\n  /adminarea/index.html: Possible admin folder\n  /adminarea/admin.html: Possible admin folder\n  /admin/controlpanel.html: Possible admin folder\n  /admin.html: Possible admin folder\n  /admin/cp.html: Possible admin folder\n  /adminpanel.php: Possible admin folder\n  /administrator/index.html: Possible admin folder\n  /administrator/login.html: Possible admin folder\n  /administrator/account.html: Possible admin folder\n  /administrator.html: Possible admin folder\n  /adminarea/login.html: Possible admin folder\n  /admincontrol/login.html: Possible admin folder\n  /admincontrol.html: Possible admin folder\n  /adminLogin.php: Possible admin folder\n  /admin/adminLogin.php: Possible admin folder\n  /adminarea/index.php: Possible admin folder\n  /adminarea/admin.php: Possible admin folder\n  /adminarea/login.php: Possible admin folder\n  /admincontrol/login.php: Possible admin folder\n  /admin2.php: Possible admin folder\n  /admin2/login.php: Possible admin folder\n  /admin2/index.php: Possible admin folder\n  /administratorlogin.php: Possible admin folder\n  /admin/account.cfm: Possible admin folder\n  /admin/index.cfm: Possible admin folder\n  /admin/login.cfm: Possible admin folder (401 Unauthorized)\n  /admin/admin.cfm: Possible admin folder\n  /admin.cfm: Possible admin folder\n  /admin/admin_login.cfm: Possible admin folder\n  /admin_login.cfm: Possible admin folder\n  /adminpanel.cfm: Possible admin folder\n  /admin/controlpanel.cfm: Possible admin folder\n  /admincontrol.cfm: Possible admin folder\n  /admin/cp.cfm: Possible admin folder\n  /admincp/index.cfm: Possible admin folder\n  /admincp/login.cfm: Possible admin folder\n  /admin_area/admin.cfm: Possible admin folder\n  /admin_area/login.cfm: Possible admin folder\n  /administrator/login.cfm: Possible admin folder\n  /administratorlogin.cfm: Possible admin folder\n  /administrator.cfm: Possible admin folder\n  /administrator/account.cfm: Possible admin folder\n  /adminLogin.cfm: Possible admin folder\n  /admin2/index.cfm: Possible admin folder\n  /admin_area/index.cfm: Possible admin folder\n  /admin2/login.cfm: Possible admin folder\n  /admincontrol/login.cfm: Possible admin folder\n  /administrator/index.cfm: Possible admin folder\n  /adminarea/login.cfm: Possible admin folder\n  /adminarea/admin.cfm: Possible admin folder\n  /adminarea/index.cfm: Possible admin folder\n  /admin/adminLogin.cfm: Possible admin folder\n  /admin-login.cfm: Possible admin folder\n  /admin/admin-login.cfm: Possible admin folder\n  /admin/home.cfm: Possible admin folder\n  /admin/account.asp: Possible admin folder\n  /admin/index.asp: Possible admin folder\n  /admin/login.asp: Possible admin folder (401 Unauthorized)\n  /admin/admin.asp: Possible admin folder\n  /admin_area/admin.asp: Possible admin folder\n  /admin_area/login.asp: Possible admin folder\n  /admin_area/index.asp: Possible admin folder\n  /admin/home.asp: Possible admin folder\n  /admin/controlpanel.asp: Possible admin folder\n  /admin.asp: Possible admin folder\n  /admin/admin-login.asp: Possible admin folder\n  /admin-login.asp: Possible admin folder\n  /admin/cp.asp: Possible admin folder\n  /administrator/account.asp: Possible admin folder\n  /administrator.asp: Possible admin folder\n  /administrator/login.asp: Possible admin folder\n  /admincp/login.asp: Possible admin folder\n  /admincontrol.asp: Possible admin folder\n  /adminpanel.asp: Possible admin folder\n  /admin/admin_login.asp: Possible admin folder\n  /admin_login.asp: Possible admin folder\n  /adminLogin.asp: Possible admin folder\n  /admin/adminLogin.asp: Possible admin folder\n  /adminarea/index.asp: Possible admin folder\n  /adminarea/admin.asp: Possible admin folder\n  /adminarea/login.asp: Possible admin folder\n  /administrator/index.asp: Possible admin folder\n  /admincontrol/login.asp: Possible admin folder\n  /admin2.asp: Possible admin folder\n  /admin2/login.asp: Possible admin folder\n  /admin2/index.asp: Possible admin folder\n  /administratorlogin.asp: Possible admin folder\n  /admin/account.aspx: Possible admin folder\n  /admin/index.aspx: Possible admin folder\n  /admin/login.aspx: Possible admin folder (401 Unauthorized)\n  /admin/admin.aspx: Possible admin folder\n  /admin_area/admin.aspx: Possible admin folder\n  /admin_area/login.aspx: Possible admin folder\n  /admin_area/index.aspx: Possible admin folder\n  /admin/home.aspx: Possible admin folder\n  /admin/controlpanel.aspx: Possible admin folder\n  /admin.aspx: Possible admin folder\n  /admin/admin-login.aspx: Possible admin folder\n  /admin-login.aspx: Possible admin folder\n  /admin/cp.aspx: Possible admin folder\n  /administrator/account.aspx: Possible admin folder\n  /administrator.aspx: Possible admin folder\n  /administrator/login.aspx: Possible admin folder\n  /admincp/index.aspx: Possible admin folder\n  /admincp/login.aspx: Possible admin folder\n  /admincontrol.aspx: Possible admin folder\n  /adminpanel.aspx: Possible admin folder\n  /admin/admin_login.aspx: Possible admin folder\n  /admin_login.aspx: Possible admin folder\n  /adminLogin.aspx: Possible admin folder\n  /admin/adminLogin.aspx: Possible admin folder\n  /adminarea/index.aspx: Possible admin folder\n  /adminarea/admin.aspx: Possible admin folder\n  /adminarea/login.aspx: Possible admin folder\n  /administrator/index.aspx: Possible admin folder\n  /admincontrol/login.aspx: Possible admin folder\n  /admin2.aspx: Possible admin folder\n  /admin2/login.aspx: Possible admin folder\n  /admin2/index.aspx: Possible admin folder\n  /administratorlogin.aspx: Possible admin folder\n  /admin/index.jsp: Possible admin folder\n  /admin/login.jsp: Possible admin folder (401 Unauthorized)\n  /admin/admin.jsp: Possible admin folder\n  /admin_area/admin.jsp: Possible admin folder\n  /admin_area/login.jsp: Possible admin folder\n  /admin_area/index.jsp: Possible admin folder\n  /admin/home.jsp: Possible admin folder\n  /admin/controlpanel.jsp: Possible admin folder\n  /admin.jsp: Possible admin folder\n  /admin/admin-login.jsp: Possible admin folder\n  /admin-login.jsp: Possible admin folder\n  /admin/cp.jsp: Possible admin folder\n  /administrator/account.jsp: Possible admin folder\n  /administrator.jsp: Possible admin folder\n  /administrator/login.jsp: Possible admin folder\n  /admincp/index.jsp: Possible admin folder\n  /admincp/login.jsp: Possible admin folder\n  /admincontrol.jsp: Possible admin folder\n  /admin/account.jsp: Possible admin folder\n  /adminpanel.jsp: Possible admin folder\n  /admin/admin_login.jsp: Possible admin folder\n  /admin_login.jsp: Possible admin folder\n  /adminLogin.jsp: Possible admin folder\n  /admin/adminLogin.jsp: Possible admin folder\n  /adminarea/index.jsp: Possible admin folder\n  /adminarea/admin.jsp: Possible admin folder\n  /adminarea/login.jsp: Possible admin folder\n  /administrator/index.jsp: Possible admin folder\n  /admincontrol/login.jsp: Possible admin folder\n  /admin2.jsp: Possible admin folder\n  /admin2/login.jsp: Possible admin folder\n  /admin2/index.jsp: Possible admin folder\n  /administratorlogin.jsp: Possible admin folder\n  /admin1.php: Possible admin folder\n  /administr8.asp: Possible admin folder\n  /administr8.php: Possible admin folder\n  /administr8.jsp: Possible admin folder\n  /administr8.aspx: Possible admin folder\n  /administr8.cfm: Possible admin folder\n  /administr8/: Possible admin folder\n  /administer/: Possible admin folder\n  /administracao.php: Possible admin folder\n  /administracao.asp: Possible admin folder\n  /administracao.aspx: Possible admin folder\n  /administracao.cfm: Possible admin folder\n  /administracao.jsp: Possible admin folder\n  /administracion.php: Possible admin folder\n  /administracion.asp: Possible admin folder\n  /administracion.aspx: Possible admin folder\n  /administracion.jsp: Possible admin folder\n  /administracion.cfm: Possible admin folder\n  /administrators/: Possible admin folder\n  /adminpro/: Possible admin folder\n  /admins/: Possible admin folder\n  /admins.cfm: Possible admin folder\n  /admins.php: Possible admin folder\n  /admins.jsp: Possible admin folder\n  /admins.asp: Possible admin folder\n  /admins.aspx: Possible admin folder\n  /administracion-sistema/: Possible admin folder\n  /admin108/: Possible admin folder\n  /admin_cp.asp: Possible admin folder\n  /admin/backup/: Possible backup\n  /admin/download/backup.sql: Possible database backup\n  /robots.txt: Robots file\n  /admin/upload.php: Admin File Upload\n  /admin/CiscoAdmin.jhtml: Cisco Collaboration Server\n  /admin-console/: JBoss Console\n  /admin4.nsf: Lotus Domino\n  /admin5.nsf: Lotus Domino\n  /admin.nsf: Lotus Domino\n  /administrator/wp-login.php: Wordpress login page.\n  /admin/libraries/ajaxfilemanager/ajaxfilemanager.php: Log1 CMS\n  /admin/view/javascript/fckeditor/editor/filemanager/connectors/test.html: OpenCart/FCKeditor File upload\n  /admin/includes/tiny_mce/plugins/tinybrowser/upload.php: CompactCMS or B-Hind CMS/FCKeditor File upload\n  /admin/includes/FCKeditor/editor/filemanager/upload/test.html: ASP Simple Blog / FCKeditor File Upload\n  /admin/jscript/upload.php: Lizard Cart/Remote File upload\n  /admin/jscript/upload.html: Lizard Cart/Remote File upload\n  /admin/jscript/upload.pl: Lizard Cart/Remote File upload\n  /admin/jscript/upload.asp: Lizard Cart/Remote File upload\n  /admin/environment.xml: Moodle files\n  /classes/: Potentially interesting folder\n  /es/: Potentially interesting folder\n  /help/: Potentially interesting folder\n  /printers/: Potentially interesting folder\n"
+              },
+              {
+                "@id": "http-jsonp-detection",
+                "@output": "Couldn't find any JSONP endpoints."
+              },
+              {
+                "@id": "http-server-header",
+                "@output": "CUPS/2.4 IPP/2.1",
+                "elem": "CUPS/2.4 IPP/2.1"
+              },
+              {
+                "@id": "http-slowloris-check",
+                "@output": "\n  VULNERABLE:\n  Slowloris DOS attack\n    State: LIKELY VULNERABLE\n    IDs:  CVE:CVE-2007-6750\n      Slowloris tries to keep many connections to the target web server open and hold\n      them open as long as possible.  It accomplishes this by opening connections to\n      the target web server and sending a partial request. By doing so, it starves\n      the http server's resources causing Denial Of Service.\n      \n    Disclosure date: 2009-09-17\n    References:\n      https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6750\n      http://ha.ckers.org/slowloris/\n",
+                "table": {
+                  "@key": "CVE-2007-6750",
+                  "elem": [
+                    { "@key": "title", "#text": "Slowloris DOS attack" },
+                    { "@key": "state", "#text": "LIKELY VULNERABLE" },
+                    { "@key": "disclosure", "#text": "2009-09-17" }
+                  ],
+                  "table": [
+                    { "@key": "ids", "elem": "CVE:CVE-2007-6750" },
+                    {
+                      "@key": "description",
+                      "elem": "Slowloris tries to keep many connections to the target web server open and hold\nthem open as long as possible.  It accomplishes this by opening connections to\nthe target web server and sending a partial request. By doing so, it starves\nthe http server's resources causing Denial Of Service."
+                    },
+                    {
+                      "@key": "dates",
+                      "table": {
+                        "@key": "disclosure",
+                        "elem": [
+                          { "@key": "year", "#text": "2009" },
+                          { "@key": "day", "#text": "17" },
+                          { "@key": "month", "#text": "09" }
+                        ]
+                      }
+                    },
+                    { "@key": "exploit_results" },
+                    {
+                      "@key": "refs",
+                      "elem": [
+                        "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6750",
+                        "http://ha.ckers.org/slowloris/"
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "@id": "http-vuln-cve2014-3704",
+                "@output": "ERROR: Script execution failed (use -d to debug)"
+              },
+              {
+                "@id": "http-wordpress-users",
+                "@output": "[Error] Wordpress installation was not found. We couldn't find wp-login.php"
+              },
+              {
+                "@id": "vulners",
+                "@output": "\n  cpe:/a:apple:cups:2.4: \n    \tCVE-2022-26691\t7.2\thttps://vulners.com/cve/CVE-2022-26691\n    \tOSV:CVE-2022-26691\t0.0\thttps://vulners.com/osv/OSV:CVE-2022-26691",
+                "table": {
+                  "@key": "cpe:/a:apple:cups:2.4",
+                  "table": [
+                    {
+                      "elem": [
+                        { "@key": "type", "#text": "cve" },
+                        { "@key": "id", "#text": "CVE-2022-26691" },
+                        { "@key": "cvss", "#text": "7.2" },
+                        { "@key": "is_exploit", "#text": "false" }
+                      ]
+                    },
+                    {
+                      "elem": [
+                        { "@key": "type", "#text": "osv" },
+                        { "@key": "id", "#text": "OSV:CVE-2022-26691" },
+                        { "@key": "cvss", "#text": "0.0" },
+                        { "@key": "is_exploit", "#text": "false" }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "@protocol": "tcp",
+            "@portid": "27017",
+            "state": {
+              "@state": "open",
+              "@reason": "syn-ack",
+              "@reason_ttl": "64"
+            },
+            "service": {
+              "@name": "mongod",
+              "@servicefp": "SF-Port27017-TCP:V=7.80%I=7%D=4/28%Time=644AFB7C%P=x86_64-pc-linux-gnu%r(mongodb,114,\"\\x14\\x01\\0\\0\\x12\\x01\\0\\0:0\\0\\0\\x01\\0\\0\\0\\x08\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0\\x01\\0\\0\\0\\xf0\\0\\0\\0\\x01ok\\0\\0\\0\\0\\0\\0\\0\\0\\0\\x02errmsg\\0\\xa1\\0\\0\\0Unsupported\\x20OP_QUERY\\x20command:\\x20serverStatus\\.\\x20The\\x20client\\x20driver\\x20may\\x20require\\x20an\\x20upgrade\\.\\x20For\\x20more\\x20details\\x20see\\x20https://dochub\\.mongodb\\.org/core/legacy-opcode-removal\\0\\x10code\\0`\\x01\\0\\0\\x02codeName\\0\\x1a\\0\\0\\0UnsupportedOpQueryCommand\\0\\0\")%r(GetRequest,A9,\"HTTP/1\\.0\\x20200\\x20OK\\r\\nConnection:\\x20close\\r\\nContent-Type:\\x20text/plain\\r\\nContent-Length:\\x2085\\r\\n\\r\\nIt\\x20looks\\x20like\\x20you\\x20are\\x20trying\\x20to\\x20access\\x20MongoDB\\x20over\\x20HTTP\\x20on\\x20the\\x20native\\x20driver\\x20port\\.\\r\\n\")%r(FourOhFourRequest,A9,\"HTTP/1\\.0\\x20200\\x20OK\\r\\nConnection:\\x20close\\r\\nContent-Type:\\x20text/plain\\r\\nContent-Length:\\x2085\\r\\n\\r\\nIt\\x20looks\\x20like\\x20you\\x20are\\x20trying\\x20to\\x20access\\x20MongoDB\\x20over\\x20HTTP\\x20on\\x20the\\x20native\\x20driver\\x20port\\.\\r\\n\");",
+              "@method": "table",
+              "@conf": "3"
+            },
+            "script": [
+              {
+                "@id": "clamav-exec",
+                "@output": "ERROR: Script execution failed (use -d to debug)"
+              },
+              {
+                "@id": "fingerprint-strings",
+                "@output": "\n  FourOhFourRequest, GetRequest: \n    HTTP/1.0 200 OK\n    Connection: close\n    Content-Type: text/plain\n    Content-Length: 85\n    looks like you are trying to access MongoDB over HTTP on the native driver port.\n  mongodb: \n    errmsg\n    Unsupported OP_QUERY command: serverStatus. The client driver may require an upgrade. For more details see https://dochub.mongodb.org/core/legacy-opcode-removal\n    code\n    codeName\n    UnsupportedOpQueryCommand",
+                "elem": [
+                  {
+                    "@key": "FourOhFourRequest, GetRequest",
+                    "#text": "HTTP/1.0 200 OK\n    Connection: close\n    Content-Type: text/plain\n    Content-Length: 85\n    looks like you are trying to access MongoDB over HTTP on the native driver port."
+                  },
+                  {
+                    "@key": "mongodb",
+                    "#text": "errmsg\n    Unsupported OP_QUERY command: serverStatus. The client driver may require an upgrade. For more details see https://dochub.mongodb.org/core/legacy-opcode-removal\n    code\n    codeName\n    UnsupportedOpQueryCommand"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "@protocol": "tcp",
+            "@portid": "38003",
+            "state": {
+              "@state": "open",
+              "@reason": "syn-ack",
+              "@reason_ttl": "64"
+            },
+            "service": {
+              "@name": "http",
+              "@product": "Node.js",
+              "@method": "probed",
+              "@conf": "10",
+              "cpe": "cpe:/a:nodejs:node.js"
+            },
+            "script": [
+              {
+                "@id": "clamav-exec",
+                "@output": "ERROR: Script execution failed (use -d to debug)"
+              },
+              {
+                "@id": "http-csrf",
+                "@output": "Couldn't find any CSRF vulnerabilities."
+              },
+              {
+                "@id": "http-dombased-xss",
+                "@output": "Couldn't find any DOM based XSS."
+              },
+              {
+                "@id": "http-jsonp-detection",
+                "@output": "Couldn't find any JSONP endpoints."
+              },
+              {
+                "@id": "http-litespeed-sourcecode-download",
+                "@output": "Request with null byte did not work. This web server might not be vulnerable"
+              },
+              {
+                "@id": "http-majordomo2-dir-traversal",
+                "@output": "ERROR: Script execution failed (use -d to debug)"
+              },
+              {
+                "@id": "http-phpmyadmin-dir-traversal",
+                "@output": "\n  VULNERABLE:\n  phpMyAdmin grab_globals.lib.php subform Parameter Traversal Local File Inclusion\n    State: UNKNOWN (unable to test)\n    IDs:  CVE:CVE-2005-3299\n      PHP file inclusion vulnerability in grab_globals.lib.php in phpMyAdmin 2.6.4 and 2.6.4-pl1 allows remote attackers to include local files via the $__redirect parameter, possibly involving the subform array.\n      \n    Disclosure date: 2005-10-nil\n    Extra information:\n      ../../../../../etc/passwd :\n  \n    References:\n      https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-3299\n      http://www.exploit-db.com/exploits/1244/\n",
+                "table": {
+                  "@key": "CVE-2005-3299",
+                  "elem": [
+                    {
+                      "@key": "title",
+                      "#text": "phpMyAdmin grab_globals.lib.php subform Parameter Traversal Local File Inclusion"
+                    },
+                    { "@key": "state", "#text": "UNKNOWN (unable to test)" },
+                    { "@key": "disclosure", "#text": "2005-10-nil" }
+                  ],
+                  "table": [
+                    { "@key": "ids", "elem": "CVE:CVE-2005-3299" },
+                    {
+                      "@key": "description",
+                      "elem": "PHP file inclusion vulnerability in grab_globals.lib.php in phpMyAdmin 2.6.4 and 2.6.4-pl1 allows remote attackers to include local files via the $__redirect parameter, possibly involving the subform array."
+                    },
+                    {
+                      "@key": "dates",
+                      "table": {
+                        "@key": "disclosure",
+                        "elem": [
+                          { "@key": "year", "#text": "2005" },
+                          { "@key": "month", "#text": "10" },
+                          { "@key": "dat", "#text": "10" }
+                        ]
+                      }
+                    },
+                    {
+                      "@key": "extra_info",
+                      "elem": "../../../../../etc/passwd :"
+                    },
+                    {
+                      "@key": "refs",
+                      "elem": [
+                        "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-3299",
+                        "http://www.exploit-db.com/exploits/1244/"
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "@id": "http-slowloris-check",
+                "@output": "\n  VULNERABLE:\n  Slowloris DOS attack\n    State: LIKELY VULNERABLE\n    IDs:  CVE:CVE-2007-6750\n      Slowloris tries to keep many connections to the target web server open and hold\n      them open as long as possible.  It accomplishes this by opening connections to\n      the target web server and sending a partial request. By doing so, it starves\n      the http server's resources causing Denial Of Service.\n      \n    Disclosure date: 2009-09-17\n    References:\n      https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6750\n      http://ha.ckers.org/slowloris/\n",
+                "table": {
+                  "@key": "CVE-2007-6750",
+                  "elem": [
+                    { "@key": "title", "#text": "Slowloris DOS attack" },
+                    { "@key": "state", "#text": "LIKELY VULNERABLE" },
+                    { "@key": "disclosure", "#text": "2009-09-17" }
+                  ],
+                  "table": [
+                    { "@key": "ids", "elem": "CVE:CVE-2007-6750" },
+                    {
+                      "@key": "description",
+                      "elem": "Slowloris tries to keep many connections to the target web server open and hold\nthem open as long as possible.  It accomplishes this by opening connections to\nthe target web server and sending a partial request. By doing so, it starves\nthe http server's resources causing Denial Of Service."
+                    },
+                    {
+                      "@key": "dates",
+                      "table": {
+                        "@key": "disclosure",
+                        "elem": [
+                          { "@key": "year", "#text": "2009" },
+                          { "@key": "day", "#text": "17" },
+                          { "@key": "month", "#text": "09" }
+                        ]
+                      }
+                    },
+                    { "@key": "exploit_results" },
+                    {
+                      "@key": "refs",
+                      "elem": [
+                        "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6750",
+                        "http://ha.ckers.org/slowloris/"
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "@id": "http-stored-xss",
+                "@output": "Couldn't find any stored XSS vulnerabilities."
+              },
+              {
+                "@id": "http-vuln-cve2013-7091",
+                "@output": "ERROR: Script execution failed (use -d to debug)"
+              },
+              {
+                "@id": "http-vuln-cve2017-1001000",
+                "@output": "ERROR: Script execution failed (use -d to debug)"
+              }
+            ]
+          }
+        ]
+      },
+      "os": {
+        "portused": [
+          { "@state": "open", "@proto": "tcp", "@portid": "631" },
+          { "@state": "closed", "@proto": "tcp", "@portid": "1" },
+          { "@state": "closed", "@proto": "udp", "@portid": "40656" }
+        ],
+        "osmatch": {
+          "@name": "Linux 2.6.32",
+          "@accuracy": "100",
+          "@line": "55543",
+          "osclass": {
+            "@type": "general purpose",
+            "@vendor": "Linux",
+            "@osfamily": "Linux",
+            "@osgen": "2.6.X",
+            "@accuracy": "100",
+            "cpe": "cpe:/o:linux:linux_kernel:2.6.32"
+          }
+        },
+        "osfingerprint": {
+          "@fingerprint": "OS:SCAN(V=7.80%E=4%D=4/28%OT=631%CT=1%CU=40656%PV=N%DS=0%DC=L%G=Y%TM=644AFD\nOS:A8%P=x86_64-pc-linux-gnu)SEQ(SP=FC%GCD=1%ISR=FF%TI=Z%CI=Z%II=I%TS=A)OPS(\nOS:O1=MFFD7ST11NW7%O2=MFFD7ST11NW7%O3=MFFD7NNT11NW7%O4=MFFD7ST11NW7%O5=MFFD\nOS:7ST11NW7%O6=MFFD7ST11)WIN(W1=FFCB%W2=FFCB%W3=FFCB%W4=FFCB%W5=FFCB%W6=FFC\nOS:B)ECN(R=Y%DF=Y%T=40%W=FFD7%O=MFFD7NNSNW7%CC=Y%Q=)T1(R=Y%DF=Y%T=40%S=O%A=\nOS:S+%F=AS%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q\nOS:=)T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A\nOS:%A=Z%F=R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y\nOS:%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T\nOS:=40%CD=S)\n"
+        }
+      },
+      "uptime": {
+        "@seconds": "1556768",
+        "@lastboot": "Mon Apr 10 04:00:32 2023"
+      },
+      "distance": { "@value": "0" },
+      "tcpsequence": {
+        "@index": "252",
+        "@difficulty": "Good luck!",
+        "@values": "5563BC85,68513CE2,84DDFF99,75042B50,A7D716AA,AB7528A9"
+      },
+      "ipidsequence": { "@class": "All zeros", "@values": "0,0,0,0,0,0" },
+      "tcptssequence": {
+        "@class": "1000HZ",
+        "@values": "5CC2939D,5CC29401,5CC29465,5CC294C9,5CC2952D,5CC29591"
+      },
+      "times": { "@srtt": "78", "@rttvar": "18", "@to": "100000" }
+    },
+    "runstats": {
+      "finished": {
+        "@time": "1682636200",
+        "@timestr": "Fri Apr 28 04:26:40 2023",
+        "@elapsed": "578.37",
+        "@summary": "Nmap done at Fri Apr 28 04:26:40 2023; 1 IP address (1 host up) scanned in 578.37 seconds",
+        "@exit": "success"
+      },
+      "hosts": { "@up": "1", "@down": "0", "@total": "1" }
+    }
+  }
+}

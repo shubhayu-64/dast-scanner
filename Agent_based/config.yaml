@@ -1,0 +1,16 @@
+# Project information
+project:
+  name: RAF DAST Scanner
+  version: 1.0.0
+  description: An Agent Based and Agentless scanner.
+  authors:
+    - name: Shubhayu Majumdar
+      email: shubhayumajumdar64@gmail.com
+
+# Configuration settings
+settings:
+  target: 127.0.0.1
+  debug: False
+  log_file: Logger/raf.log
+  scan_results_directory: /home/shubhayu/Documents/opensource/privateRAF/Backend/Agent_based/scan_results
+  base_directory: /home/shubhayu/Documents/opensource/privateRAF/Backend/Agent_based

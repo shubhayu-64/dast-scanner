@@ -1,0 +1,121 @@
+Starting Nmap 7.80 ( https://nmap.org ) at 2023-04-08 12:08 IST
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.000044s latency).
+Not shown: 65530 closed ports
+PORT      STATE SERVICE VERSION
+631/tcp   open  ipp     CUPS 2.4
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+|_http-aspnet-debug: ERROR: Script execution failed (use -d to debug)
+|_http-server-header: CUPS/2.4 IPP/2.1
+| http-slowloris-check: 
+|   VULNERABLE:
+|   Slowloris DOS attack
+|     State: LIKELY VULNERABLE
+|     IDs:  CVE:CVE-2007-6750
+|       Slowloris tries to keep many connections to the target web server open and hold
+|       them open as long as possible.  It accomplishes this by opening connections to
+|       the target web server and sending a partial request. By doing so, it starves
+|       the http server's resources causing Denial Of Service.
+|       
+|     Disclosure date: 2009-09-17
+|     References:
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6750
+|_      http://ha.ckers.org/slowloris/
+| vulners: 
+|   cpe:/a:apple:cups:2.4: 
+|     	CVE-2022-26691	7.2	https://vulners.com/cve/CVE-2022-26691
+|_    	OSV:CVE-2022-26691	0.0	https://vulners.com/osv/OSV:CVE-2022-26691
+5037/tcp  open  unknown
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+27017/tcp open  mongod?
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+| fingerprint-strings: 
+|   FourOhFourRequest, GetRequest: 
+|     HTTP/1.0 200 OK
+|     Connection: close
+|     Content-Type: text/plain
+|     Content-Length: 85
+|     looks like you are trying to access MongoDB over HTTP on the native driver port.
+|   mongodb: 
+|     errmsg
+|     Unsupported OP_QUERY command: serverStatus. The client driver may require an upgrade. For more details see https://dochub.mongodb.org/core/legacy-opcode-removal
+|     code
+|     codeName
+|_    UnsupportedOpQueryCommand
+37807/tcp open  http    Node.js
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+|_http-majordomo2-dir-traversal: ERROR: Script execution failed (use -d to debug)
+| http-phpmyadmin-dir-traversal: 
+|   VULNERABLE:
+|   phpMyAdmin grab_globals.lib.php subform Parameter Traversal Local File Inclusion
+|     State: UNKNOWN (unable to test)
+|     IDs:  CVE:CVE-2005-3299
+|       PHP file inclusion vulnerability in grab_globals.lib.php in phpMyAdmin 2.6.4 and 2.6.4-pl1 allows remote attackers to include local files via the $__redirect parameter, possibly involving the subform array.
+|       
+|     Disclosure date: 2005-10-nil
+|     Extra information:
+|       ../../../../../etc/passwd :
+|   
+|     References:
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-3299
+|_      http://www.exploit-db.com/exploits/1244/
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+|_http-vuln-cve2013-7091: ERROR: Script execution failed (use -d to debug)
+|_http-vuln-cve2017-1001000: ERROR: Script execution failed (use -d to debug)
+38527/tcp open  http    Node.js
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+|_http-majordomo2-dir-traversal: ERROR: Script execution failed (use -d to debug)
+| http-phpmyadmin-dir-traversal: 
+|   VULNERABLE:
+|   phpMyAdmin grab_globals.lib.php subform Parameter Traversal Local File Inclusion
+|     State: UNKNOWN (unable to test)
+|     IDs:  CVE:CVE-2005-3299
+|       PHP file inclusion vulnerability in grab_globals.lib.php in phpMyAdmin 2.6.4 and 2.6.4-pl1 allows remote attackers to include local files via the $__redirect parameter, possibly involving the subform array.
+|       
+|     Disclosure date: 2005-10-nil
+|     Extra information:
+|       ../../../../../etc/passwd :
+|   
+|     References:
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-3299
+|_      http://www.exploit-db.com/exploits/1244/
+| http-slowloris-check: 
+|   VULNERABLE:
+|   Slowloris DOS attack
+|     State: LIKELY VULNERABLE
+|     IDs:  CVE:CVE-2007-6750
+|       Slowloris tries to keep many connections to the target web server open and hold
+|       them open as long as possible.  It accomplishes this by opening connections to
+|       the target web server and sending a partial request. By doing so, it starves
+|       the http server's resources causing Denial Of Service.
+|       
+|     Disclosure date: 2009-09-17
+|     References:
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6750
+|_      http://ha.ckers.org/slowloris/
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+|_http-vuln-cve2013-7091: ERROR: Script execution failed (use -d to debug)
+|_http-vuln-cve2017-1001000: ERROR: Script execution failed (use -d to debug)
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port27017-TCP:V=7.80%I=7%D=4/8%Time=64310BE5%P=x86_64-pc-linux-gnu%r(mo
+SF:ngodb,114,"\x14\x01\0\0\x1a\x05\0\0:0\0\0\x01\0\0\0\x08\0\0\0\0\0\0\0\0
+SF:\0\0\0\0\0\0\0\x01\0\0\0\xf0\0\0\0\x01ok\0\0\0\0\0\0\0\0\0\x02errmsg\0\
+SF:xa1\0\0\0Unsupported\x20OP_QUERY\x20command:\x20serverStatus\.\x20The\x
+SF:20client\x20driver\x20may\x20require\x20an\x20upgrade\.\x20For\x20more\
+SF:x20details\x20see\x20https://dochub\.mongodb\.org/core/legacy-opcode-re
+SF:moval\0\x10code\0`\x01\0\0\x02codeName\0\x1a\0\0\0UnsupportedOpQueryCom
+SF:mand\0\0")%r(GetRequest,A9,"HTTP/1\.0\x20200\x20OK\r\nConnection:\x20cl
+SF:ose\r\nContent-Type:\x20text/plain\r\nContent-Length:\x2085\r\n\r\nIt\x
+SF:20looks\x20like\x20you\x20are\x20trying\x20to\x20access\x20MongoDB\x20o
+SF:ver\x20HTTP\x20on\x20the\x20native\x20driver\x20port\.\r\n")%r(FourOhFo
+SF:urRequest,A9,"HTTP/1\.0\x20200\x20OK\r\nConnection:\x20close\r\nContent
+SF:-Type:\x20text/plain\r\nContent-Length:\x2085\r\n\r\nIt\x20looks\x20lik
+SF:e\x20you\x20are\x20trying\x20to\x20access\x20MongoDB\x20over\x20HTTP\x2
+SF:0on\x20the\x20native\x20driver\x20port\.\r\n");
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 578.03 seconds

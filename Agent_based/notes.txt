@@ -1,0 +1,7 @@
+
+[ We don't need ZAP in Agent Based scanning ]
+
+To run ZAP in daemon mode, use the following command in terminal:
+zaproxy -daemon -config api.key=mk5f08maq9eh575sem -host 127.0.0.1 -port 8080
+
+Or run ZAP GUI in your local machine on port 8080
